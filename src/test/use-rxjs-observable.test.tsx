@@ -4,7 +4,7 @@ import { should } from 'chai';
 import register from 'jsdom-global';
 
 import { interval, of } from 'rxjs';
-import { map, delay } from 'rxjs/operators';
+import { map, delay, take } from 'rxjs/operators';
 
 import useRxJSObservable from '../index';
 
@@ -43,6 +43,7 @@ describe('useRxJSObservable()', () => {
   it('should update the state appropriately.', done => {
     const Comp = ({ initial } : { initial: number }) => {
       const counter = useRxJSObservable(initial, () => interval(10).pipe(
+        take(2),
         map((i) => initial + i + 1)
       ));
 
