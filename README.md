@@ -8,7 +8,6 @@
 [![coverage](https://img.shields.io/codecov/c/github/must/use-rxjs-observable?logo=codecov&style=flat-square)](https://codecov.io/gh/must/use-rxjs-observable)
 [![version](https://img.shields.io/npm/v/use-rxjs-observable?logo=npm&style=flat-square)](https://www.npmjs.com/package/use-rxjs-observable)
 
-
 </div>
 
 <br>
@@ -37,17 +36,17 @@ function App() {
 }
 
 ```
-[ ► Playground ](https://stackblitz.com/edit/use-rxjs-observable?file=index.tsx)
+[ ► Playground](https://stackblitz.com/edit/use-rxjs-observable?file=index.tsx)
 
 <br>
 
-### Why not Callbags?
+## Why not Callbags
 
 Only reason I can think of is if you already use RxJS and prefer it over Callbags and [callbag operators](https://loreanvictor.github.io/callbag-common/).
 
 <br><br>
 
-# Contribution
+## Contribution
 
 Be nice and respectful, more importantly super open and welcoming to all.
 
