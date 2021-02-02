@@ -7,8 +7,8 @@ import useRxJSObservable from '../src';
 
 export default ({ x }: {x : number}) => {
   const count = useRxJSObservable(x, () => (
-    map((i: number) => x + i + 1)(
-      interval(1000)
+    interval(1000).pipe(
+      map((i) => x + i + 1)
     )
   ));
 
