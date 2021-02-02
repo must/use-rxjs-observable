@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 import { should } from 'chai';
 import register from 'jsdom-global';
@@ -37,7 +37,7 @@ describe('useRxJSObservable()', () => {
     setTimeout(() => {
       document.body.textContent!.should.equal('hola');
       done();
-    }, 20);
+    }, 30);
   });
 
   it('should update the state appropriately.', done => {
@@ -55,7 +55,6 @@ describe('useRxJSObservable()', () => {
     }, 5);
     setTimeout(() => {
       document.body.textContent!.should.equal('1');
-      done();
     }, 20);
     setTimeout(() => {
       document.body.textContent!.should.equal('2');
